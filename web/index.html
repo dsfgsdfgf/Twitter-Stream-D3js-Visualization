@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hashtag Dashboard</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/e.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,900' rel='stylesheet' type='text/css'>
+	<!--<script src="js/vendor/socket.io.js"></script>-->
+	<!--<script src="js/vendor/d3.min.js"></script>-->
+	<script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js" charset="utf-8"></script>
+</head>
+<body class="sea">
+	<div id="stats">
+		<div>connecting...</div>
+	</div>
+	<div id="viz">
+		<div class="title">
+			<h1>Stellar</h1>
+		</div>
+		<div id="social">
+			<!-- Todo: Include domain for share -->
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="URL-here" data-counturl="URL-here" data-via="littleark" data-hashtags="#HHPPC,#paperplane,#Stellar">Tweet</a>
+		</div>
+
+
+
+
+		<!-- ******************************* -->
+		<div id="sea">
+			<div class="title">
+			<h1>Hashtags: <span>#HHPPC, #paperplane, #Stellar</span></h1>
+			</div>
+		</div>
+
+
+		<!-- ******************************* -->
+		<div id="mode">
+			<a href="#" id="multi" class="fs1" aria-hidden="true" data-icon="&#xe002;"><span>multi wave</span></a>
+			<a href="#" id="single" class="fs1" aria-hidden="true" data-icon="&#xe001;"><span>single wave</span></a>
+		</div>
+		<!-- ******************************* -->
+
+
+
+		<div id="statuses"></div>
+		<div id="dragme">
+			<div id="gauge"><span>Drag me</span></div>
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+	<script src="js/c.js"></script>
+	<script defer>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script defer>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=36246655985";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>
